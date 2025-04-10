@@ -1,15 +1,15 @@
 ![alt text](/public/img/image.png)
 
-## Установка проекта
+## Project Installation
 
-Следуйте этим шагам, чтобы настроить и запустить проект локально.
+Follow these steps to set up and run the project locally.
 
-### Требования
+### Requirements
 - PHP
 - Composer
-- Токен доступа к API от [TMDb](https://www.themoviedb.org/documentation/api) (API Read Access Token (v4 auth))
+- API Access Token from TMDb (https://www.themoviedb.org/documentation/api) (API Read Access Token (v4 auth))
 
-### Шаги установки:
+### Installation steps:
 
 ```bash
 git clone https://github.com/iammaga/Netflix.git
@@ -21,7 +21,7 @@ composer install
 ```bash
 cp .env.example .env
 ```
-Откройте файл .env, найдите или добавьте переменную ```TMDB_TOKEN``` и укажите вместо ```YOUR_TMDB_TOKEN``` ваш API-токен TMDb:
+Open the .env file, find or add the variable TMDB_TOKEN, and replace YOUR_TMDB_TOKEN with your TMDb API token:
 ```bash
 TMDB_TOKEN="YOUR_TMDB_TOKEN"
 ```
@@ -31,10 +31,5 @@ php artisan key:generate
 ```bash
 php artisan serve
 ```
-В веб-браузере перейдите по адресу: http://localhost:8000.
+In your web browser, go to the address: http://localhost:8000.
 
-### Идеа
-```bash
-https://roadmap.sh/projects/movie-reservation-system
-https://roadmap.sh/projects/tmdb-cli
-```
